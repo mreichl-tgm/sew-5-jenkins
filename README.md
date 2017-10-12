@@ -24,3 +24,4 @@ EXPOSE 8083
 ```
 
 Nach der Installation wurden die Plugins gewählt wobei unter anderem die Git und GitHub Plugin Installationen fehlschlugen.
+Das Problem wurde jedoch beim zweiten Versuch, in Jenkins selbst, behoben.
