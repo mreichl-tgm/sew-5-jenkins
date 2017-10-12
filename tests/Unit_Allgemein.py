@@ -70,11 +70,11 @@ class TestAllgemein(unittest.TestCase):
         self.assertRaises(TypeError, self.b2.__pow__, "other")
 
     def test_makeBruchTypeError(self):
-        self.assertRaises(TypeError, Bruch._Bruch__makeBruch, "other")
+        self.assertRaises(TypeError, Bruch._bruch__make_bruch, "other")
 
     def test_makeBruchInt(self):
         value = 3
-        b4 = Bruch._Bruch__makeBruch(value)
+        b4 = Bruch._bruch__make_bruch(value)
         assert(b4.zaehler == value)
 
     def testAbs(self):
