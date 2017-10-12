@@ -21,6 +21,7 @@ RUN apt-get install python3-mock -y
 RUN apt-get install python3-sphinx -y
 RUN apt-get install pylint3 -y
 RUN apt-get install pylint -y
+RUN apt-get install make -y
 # Back to jenkins
 USER jenkins
 
@@ -63,5 +64,6 @@ Um dem Benutzer mehr Freiheit zu lassen wird das source directory behalten und n
 Dazu einfach das Buildscript erweitern um:
 ```commandline
 sphinx-build -b html ./docs/source ./docs/build
+cd ./docs
 make html
 ```
