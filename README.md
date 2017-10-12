@@ -64,6 +64,9 @@ Um dem Benutzer mehr Freiheit zu lassen wird das source directory behalten und n
 Dazu einfach das Buildscript erweitern um:
 ```commandline
 sphinx-build -b html ./docs/source ./docs/build
+```
+oder
+``` commandline
 cd ./docs
 make html
 ```
