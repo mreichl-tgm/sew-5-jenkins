@@ -54,10 +54,10 @@ Die Screenshots finden sich im Guide Ordner.
 
 ### Erweiterungen (30%):
 ##### Konfiguriere und teste eine Git-Hook, sodass Änderungen auf GitHub automatisch einen Build auslösen! Dokumentiere deine Vorgangsweise (mit Screenshots)!
-:)
+Sicherheitslücke.. Im Prinzip müsste nur der eigene Jenkins Port freigegeben werden und über das GitHub Plugin mit integriert werden.
 
 ##### Recherchiere, wie mithilfe von Jenkins GUI-Tests durchgeführt werden können und baue selbstständig einen Beispiel-GUI-Test ein! Dokumentiere deine Vorgangsweise (mit Screenshots)!
-:)
+http://macoscope.com/blog/automated-ui-testing-with-jenkins-ci/
 
 ##### Lass deine Sphinx-Dokumentation automatisch mitbuilden und veröffentlichen! Dokumentiere deine Vorgangsweise (mit Screenshots)!
 Um dem Benutzer mehr Freiheit zu lassen wird das source directory behalten und nur gebuildet.
