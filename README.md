@@ -4,7 +4,7 @@
 Lass das Bruch-Projekt mithilfe von Jenkins automatisch bei jedem Build testen!
 
 ### Grundanforderungen (70%):
-### Installiere auf deinem Rechner bzw. einer virtuellen Instanz das Continuous Integration System Jenkins
+##### Installiere auf deinem Rechner bzw. einer virtuellen Instanz das Continuous Integration System Jenkins
 Zur Installation von Jenkins wurde ein Docker Container auf Basis des offiziellen Jekins Docker Images erstellt.
 Das fertige Image findet sich unter https://hub.docker.com/re1coy/sew-jenkins/.
 
@@ -27,16 +27,25 @@ USER jenkins
 
 EXPOSE 8083
 ```
+
+![Jenkins Installation](guide/01.png)
+
 ##### Installiere die notwendigen Plugins für Jenkins (Violations, Cobertura)
 Nach der Installation wurden die Plugins gewählt wobei unter anderem die Git und GitHub Plugin Installationen fehlschlugen.
 Das Problem wurde jedoch beim zweiten Versuch, in Jenkins selbst, behoben.
+
+![Plugin Installation](guide/02.png)
+
 ##### Installiere Nose, Pylint und coverage (mithilfe von pip)
 Die Installation dieser Module wurde bereits im Dockerfile (siehe oben) übernommen.
 ##### Integriere dein Bruch-Projekt in Jenkins, indem du es mit Git verbindest
 Um das Projekt mit GitHub zu verbinden wurde dieses über ein Plugin hinzugefügt. In diesem Fall:
 ```
-https://github.com/mreichl-tgm/sew5-jenkins/
+https://github.com/mreichl-tgm/sew-5-jenkins/
 ```
+
+![Bruch Konfiguration](guide/04.png)
+
 ##### Überlege dir und argumentiere eine sinnvolle Pull-Strategie
 Da sich Intervalle bei einem einfachen Beispiel kaum lohnen wurde beschlossen nur beim pushen von Änderungen zu builden.
 Da diese Einstellung mit GitHub eine Sicherheitslücke darstellt wurde auf diesen Punkt verzichtet.
