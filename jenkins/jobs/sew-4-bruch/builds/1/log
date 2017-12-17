@@ -1,0 +1,20 @@
+Started by user [8mha:////4KHxsa6yFVI9MJsKnPh7OpCPzIwlV1Y9P5tARnWGgpwaAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL94tRy3azUvOzMvGIAGCjPpcYAAAA=[0mSew Jenkins
+Building in workspace /var/jenkins_home/workspace/sew-4-bruch
+FATAL: Null value not allowed as an environment variable: GIT_URL
+[8mha:////4EpVJfoIt0TDkIsMd1ZulBlyy2LQVFi7GddBX1eYvVPpAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mjava.lang.IllegalArgumentException: Null value not allowed as an environment variable: GIT_URL
+	at hudson.EnvVars.put(EnvVars.java:359)
+	at hudson.EnvVars.put(EnvVars.java:75)
+	at hudson.plugins.git.GitSCM.buildEnvironment(GitSCM.java:1339)
+	at hudson.plugins.git.GitSCM.buildEnvVars(GitSCM.java:1296)
+	at hudson.model.AbstractBuild.getEnvironment(AbstractBuild.java:883)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1116)
+	at hudson.scm.SCM.checkout(SCM.java:495)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1212)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:566)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:491)
+	at hudson.model.Run.execute(Run.java:1737)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:421)
+Finished: FAILURE

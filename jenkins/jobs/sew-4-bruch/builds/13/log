@@ -1,0 +1,24 @@
+Started by user [8mha:////4KHxsa6yFVI9MJsKnPh7OpCPzIwlV1Y9P5tARnWGgpwaAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL94tRy3azUvOzMvGIAGCjPpcYAAAA=[0mSew Jenkins
+Building in workspace /var/jenkins_home/workspace/sew-4-bruch
+[sew-4-bruch] $ /bin/sh -xe /tmp/jenkins7334180527323468068.sh
++ ls
+__pycache__
+bruch.py
+coverage.xml
+nosetests.xml
+pylint.out
+test
++ nosetests3 --with-xunit --all-modules --traverse-namespace --with-coverage --cover-inclusive ./test
+...............................................
+Name       Stmts   Miss  Cover   Missing
+----------------------------------------
+bruch.py     133     26    80%   14, 20, 34, 37, 48-51, 271-275, 285-296, 305, 313, 341, 366-369
+----------------------------------------------------------------------
+Ran 47 tests in 0.013s
+
+OK
++ python3 -m coverage xml ./test/__init__.py
++ pylint3 -f parseable -d I0011,R0801 ./bruch
+No config file found, using default configuration
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

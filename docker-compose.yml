@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  sew-jenkins:
+    build:
+      context: .
+    restart: always
+    ports:
+      - '8080:8080'
+    volumes:
+      - './jenkins:/var/jenkins_home'
+      - './src:/var/jenkins_home/workspace/sew-4-bruch'
+    container_name: sew-jenkins
