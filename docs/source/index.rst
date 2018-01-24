@@ -9,8 +9,7 @@ Welcome to Bruch's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-   bruch
+      ./modules
 
 Indices and tables
 ==================
