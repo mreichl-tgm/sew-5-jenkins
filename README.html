@@ -519,11 +519,13 @@ services:
       - '8080:8080'
     volumes:
       - '/var/jenkins_home:/var/jenkins_home'
+      - ''
     container_name: sew-jenkins</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Zur Installation kann also einfach im Root Verzeichnis <code>docker-compose up -d</code> ausgeführt werden und der Dienst ist unter <code><a href="http://localhost:8080" class="bare">http://localhost:8080</a></code> verfügbar.</p>
+<p>Zur Installation kann also einfach im Root Verzeichnis <code>docker-compose up -d</code> ausgeführt werden und der Dienst ist unter <code><a href="http://localhost:8080" class="bare">http://localhost:8080</a></code> verfügbar.
+Zur Anmeldung wurde in diesem Fall sowohl als Benutzername als auch als Passwort der String <code>sew-jenkins</code> verwendet.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -623,6 +625,17 @@ Dazu einfach das Buildscript erweitern um:</p>
 <pre class="highlight"><code class="language-commandline" data-lang="commandline">cd ./docs
 make html</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Zudem sollte die Zeile</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-commandline" data-lang="commandline">./docs:/var/jenkins_home/workspace/sew-4-bruch/src/docs</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>der <code>docker-compose.yml</code> hinzugefügt werden.</p>
 </div>
 </div>
 </div>

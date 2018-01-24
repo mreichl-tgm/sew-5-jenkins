@@ -1,7 +1,0 @@
-Started by user [8mha:////4KHxsa6yFVI9MJsKnPh7OpCPzIwlV1Y9P5tARnWGgpwaAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/dLi1CL94tRy3azUvOzMvGIAGCjPpcYAAAA=[0mSew Jenkins
-Building in workspace /var/jenkins_home/workspace/sew-4-bruch
-[sew-4-bruch] $ /bin/sh -xe /tmp/jenkins3832414180056206321.sh
-+ cd /bruch
-/tmp/jenkins3832414180056206321.sh: 2: cd: can't cd to /bruch
-Build step 'Execute shell' marked build as failure
-Finished: FAILURE

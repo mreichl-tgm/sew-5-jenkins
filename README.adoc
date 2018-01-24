@@ -56,6 +56,7 @@ services:
 ----
 
 Zur Installation kann also einfach im Root Verzeichnis `docker-compose up -d` ausgeführt werden und der Dienst ist unter `http://localhost:8080` verfügbar.
+Zur Anmeldung wurde in diesem Fall sowohl als Benutzername als auch als Passwort der String `sew-jenkins` verwendet.
 
 image::guide/01.png[Jenkins Installation]
 
@@ -111,3 +112,9 @@ oder
 cd ./docs
 make html
 ----
+Zudem sollte die Zeile
+[source, commandline]
+----
+./docs:/var/jenkins_home/workspace/sew-4-bruch/src/
+----
+der `docker-compose.yml` hinzugefügt werden.
