@@ -1,5 +1,5 @@
 .. Bruch documentation master file, created by
-   sphinx-quickstart on Wed Jan 24 21:59:28 2018.
+   sphinx-quickstart on Wed Jan 24 22:31:30 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -9,8 +9,9 @@ Welcome to Bruch's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-      ./bruch
-      ./test
+
+   ./modules
+
 
 Indices and tables
 ==================

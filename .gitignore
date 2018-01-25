@@ -121,4 +121,8 @@ docs/build
 Makefile
 
 # Jenkins setup
-jenkins/
+builds/
+logs/
+war/
+lastStable
+lastSuccessful

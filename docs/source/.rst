@@ -1,0 +1,25 @@
+ namespace
+==========
+
+Subpackages
+-----------
+
+.. toctree::
+
+    .docs
+    .guide
+    .jenkins
+    .test
+
+Submodules
+----------
+
+bruch module
+------------
+
+.. automodule:: bruch
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
